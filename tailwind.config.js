@@ -10,6 +10,9 @@ export default {
         trueGray: {
           900: '#111827', // Adjust this if necessary
         },
+        darkGreen: {
+          900: '#0D7C66'
+        },
     },},
   },
   variants: {
