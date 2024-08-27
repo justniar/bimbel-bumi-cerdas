@@ -1,7 +1,7 @@
 import React from "react";
 
 import PricingCard from "./PricingCard";
-const PricePlan = () => {
+const Pengajar = () => {
   return (
     <div className="py-20">
       <div className="md:w-1/3 m-auto text-center space-y-2">
@@ -43,4 +43,4 @@ const PricePlan = () => {
   );
 };
 
-export default PricePlan;
+export default Pengajar;

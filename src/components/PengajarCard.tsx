@@ -1,6 +1,6 @@
 import React from "react";
 
-interface PricingCardProps {
+interface PengajarCardProps {
   bg: string;        // Background color class, e.g., 'blue-500'
   text: string;      // Text color class, e.g., 'white'
   img: string;       // Image URL
@@ -9,7 +9,7 @@ interface PricingCardProps {
   title: string;     // Title text
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ bg, text, img, price, button, title }) => {
+const PengajarCard: React.FC<PengajarCardProps> = ({ bg, text, img, price, button, title }) => {
   return (
     <div
       className={`p-10 space-y-5 rounded-md bg-${bg} shadow-2xl text-${text}`}
@@ -52,4 +52,4 @@ const PricingCard: React.FC<PricingCardProps> = ({ bg, text, img, price, button,
   );
 };
 
-export default PricingCard;
+export default PengajarCard;

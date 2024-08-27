@@ -1,6 +1,6 @@
 import React from "react";
 
-const LearnMore = () => {
+const Prestasi = () => {
   return (
     <div className="py-20 px-5 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
       <div className="md:w-1/3">
@@ -27,4 +27,4 @@ const LearnMore = () => {
   );
 };
 
-export default LearnMore;
+export default Prestasi;

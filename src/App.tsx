@@ -1,10 +1,10 @@
 import Hero from "./components/Hero";
-import LearnMore from "./components/LearnMore";
 import Navbar from "./components/Navbar";
-import PricePlan from "./components/PricePlan";
 import Watch from "./components/Watch";
 import Footer from "./components/Footer";
 import Program from "./components/Program";
+import Prestasi from "./components/Prestasi";
+import Pengajar from "./components/Pengajar";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <Hero />
         <Program />
-        <LearnMore />
-        <PricePlan />
+        <Prestasi />
+        <Pengajar />
         <Watch />
         <Footer />
       </div>
