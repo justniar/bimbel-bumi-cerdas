@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import PricePlan from "./components/PricePlan";
 import Watch from "./components/Watch";
 import Footer from "./components/Footer";
-import Program from "./components/Services";
+import Program from "./components/Program";
 
 function App() {
   return (
