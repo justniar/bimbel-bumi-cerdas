@@ -2,9 +2,9 @@ import Hero from "./components/Hero";
 import LearnMore from "./components/LearnMore";
 import Navbar from "./components/Navbar";
 import PricePlan from "./components/PricePlan";
-import Services from "./components/Services";
 import Watch from "./components/Watch";
 import Footer from "./components/Footer";
+import Program from "./components/Services";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div className="container m-auto px-10">
         <Navbar />
         <Hero />
-        <Services />
+        <Program />
         <LearnMore />
         <PricePlan />
         <Watch />
