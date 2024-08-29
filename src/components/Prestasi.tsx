@@ -24,7 +24,7 @@ const Prestasi = () => {
       <div className="text-center md:w-1/2 space-y-5">
         <p className="text-green-400">Prestasi Terbaru Bimble Bumi Cerdas</p>
         <h1 className="text-4xl font-semibold">
-          Prestasi Terbaru Bimble Bumi Cerdas
+          Prestasi Terbaru Bimbel Bumi Cerdas
         </h1>
         <p className="text-gray-300">
           Berikut adalah beberapa pencapaian terbaru dari Bimble Bumi Cerdas.
@@ -45,7 +45,7 @@ const Prestasi = () => {
       </div>
       
       <button className="mt-10 px-5 py-2 rounded-full bg-green-500 text-white font-semibold">
-        Learn More
+        lihat lebih banyak
       </button>
     </div>
   );

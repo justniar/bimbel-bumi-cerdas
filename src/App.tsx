@@ -10,7 +10,7 @@ import Profil from "./components/Profil";
 function App() {
   return (
     <div className="bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
-      <div className="container m-auto px-10">
+      <div className="container m-auto">
         <Navbar />
         <Hero />
         <Program />

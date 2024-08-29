@@ -1,20 +1,20 @@
 import React from "react";
-import aboutSvg from "../assets/about.svg"; // Update this path to the SVG file
+import aboutSvg from "../assets/bg2.jpg"; // Update this path to the SVG file
 
 const Profil = () => {
   return (
     <div 
-      className="py-20 px-5 flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 bg-gradient-to-r from-green-400 to-sky-400 relative"
+      className="flex flex-col justify-center items-center bg-white relative min-h-screen"
       style={{
         backgroundImage: `url(${aboutSvg})`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'top center',
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="bg-black bg-opacity-50 p-10 rounded-md md:w-1/2 space-y-5">
+      <div className="rounded-md w-full md:w-1/2 space-y-5 text-center">
         <p className="text-green-400">Profil Terbaru Bimble Bumi Cerdas</p>
-        <h1 className="text-6xl font-semibold text-white">
+        <h1 className="text-6xl font-semibold text-green-400">
           Tentang Bimble Bumi Cerdas
         </h1>
         <p className="text-gray-300">
