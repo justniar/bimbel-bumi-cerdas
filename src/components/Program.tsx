@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
-import math from "../assets/math.png";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+import math from "../assets/math.png";
+import pracalis from "../assets/pracalis.png"
+import qiro from "../assets/qiro.png"
+import english from "../assets/english.png"
 
 import ProgramCard from "./ProgramCard";
 
@@ -24,13 +28,13 @@ const Program = () => {
       <div className="max-w-7xl mx-auto overflow-x-hidden" ref={scrollContainerRef}>
         <div className="inline-flex p-10 space-x-5">
           <ProgramCard src={math} judul="Prisma" deskripsi="Deskripsi singkat tentang program Prisma." />
-          <ProgramCard src={math} judul="Abama" deskripsi="Deskripsi singkat tentang program Abama." />
-          <ProgramCard src={math} judul="Qiro'ati" deskripsi="Deskripsi singkat tentang program Qiro'ati." />
+          <ProgramCard src={pracalis} judul="Abama" deskripsi="Deskripsi singkat tentang program Abama." />
+          <ProgramCard src={qiro} judul="Qiro'ati" deskripsi="Deskripsi singkat tentang program Qiro'ati." />
           <ProgramCard src={math} judul="Sempoa" deskripsi="Deskripsi singkat tentang program Sempoa." />
           <ProgramCard src={math} judul="Cermat" deskripsi="Deskripsi singkat tentang program Cermat." />
           <ProgramCard src={math} judul="Tematik" deskripsi="Deskripsi singkat tentang program Tematik." />
-          <ProgramCard src={math} judul="Pracalis" deskripsi="Deskripsi singkat tentang program Pracalis." />
-          <ProgramCard src={math} judul="Bahasa Inggris" deskripsi="Deskripsi singkat tentang program Bahasa Inggris." />
+          <ProgramCard src={pracalis} judul="Pracalis" deskripsi="Deskripsi singkat tentang program Pracalis." />
+          <ProgramCard src={english} judul="Bahasa Inggris" deskripsi="Deskripsi singkat tentang program Bahasa Inggris." />
           <ProgramCard src={math} judul="Coding" deskripsi="Deskripsi singkat tentang program Coding." />
         </div>
       </div>

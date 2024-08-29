@@ -1,6 +1,6 @@
 import React from "react";
 
-import PricingCard from "./PricingCard";
+import PricingCard from "./PengajarCard";
 const Pengajar = () => {
   return (
     <div className="py-20">

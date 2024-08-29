@@ -7,9 +7,9 @@ const Prestasi = () => {
         <img src="/learn_img.svg" alt="" />
       </div>
       <div className="md:w-1/2 space-y-5">
-        <p className="text-green-400">Lorem ipsum dolor sit amet.</p>
+        <p className="text-green-400">Prestasi Terbaru Bimble Bumi Cerdas</p>
         <h1 className="text-6xl font-semibold">
-          Lorem ipsum dolor sit amet consectetur.
+          Prestasi Terbaru Bimble Bumi Cerdas
         </h1>
         <p className="text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore

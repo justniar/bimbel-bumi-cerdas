@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Program from "./components/Program";
 import Prestasi from "./components/Prestasi";
 import Pengajar from "./components/Pengajar";
+import Profil from "./components/Profil";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Hero />
         <Program />
+        <Profil/>
         <Prestasi />
         <Pengajar />
         <Watch />
