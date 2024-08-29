@@ -1,19 +1,21 @@
 import React from "react";
-import satu from  "../assets/prestasi/1.jpeg"
+import satu from "../assets/prestasi/1.jpeg";
+import dua from "../assets/prestasi/2.jpeg";
+import tiga from "../assets/prestasi/3.jpeg";
 
 const galleryData = [
-  {
-    url: "../assets/prestasi/1.jpeg",
-    caption: "Level 5 ABAMA"
-  },
-  {
-    url: "../assets/prestasi/1.jpeg",
-    caption: "Level 5 ABAMA"
-  },
-  {
-    url: "../assets/prestasi/1.jpeg",
-    caption: "Level 5 ABAMA"
-  },
+  { url: satu, caption: "Level 5 ABAMA" },
+  { url: dua, caption: "Level 5 ABAMA" },
+  { url: tiga, caption: "Level 5 ABAMA" },
+  { url: satu, caption: "Level 5 ABAMA" },
+  { url: dua, caption: "Level 5 ABAMA" },
+  { url: tiga, caption: "Level 5 ABAMA" },
+  { url: satu, caption: "Level 5 ABAMA" },
+  { url: dua, caption: "Level 5 ABAMA" },
+  { url: tiga, caption: "Level 5 ABAMA" },
+  { url: satu, caption: "Level 5 ABAMA" },
+  { url: dua, caption: "Level 5 ABAMA" },
+  { url: tiga, caption: "Level 5 ABAMA" },
 ];
 
 const Prestasi = () => {
@@ -29,7 +31,7 @@ const Prestasi = () => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {galleryData.map((item, index) => (
           <div key={index} className="flex flex-col items-center">
             <img 
@@ -37,7 +39,7 @@ const Prestasi = () => {
               alt={item.caption} 
               className="w-full h-64 object-cover rounded-lg"
             />
-            <p className="text-gray-300 mt-3">{item.caption}</p>
+            <p className="text-gray-300 mt-3 text-center">{item.caption}</p>
           </div>
         ))}
       </div>
