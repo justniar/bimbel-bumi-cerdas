@@ -17,7 +17,7 @@ const Profil = () => {
         <h1 className="text-6xl font-semibold text-green-400">
           Tentang Bimble Bumi Cerdas
         </h1>
-        <p className="text-gray-300">
+        <p className="text-gray-500">
           Bimble Bumi Cerdas adalah sebuah lembaga edukasi yang menyediakan layanan bimbingan belajar (bimbel) 
           dengan pendekatan yang interaktif dan menyenangkan. Bimble ini dirancang untuk membantu siswa dalam
           memahami materi pelajaran secara lebih mendalam, serta meningkatkan prestasi akademik mereka melalui 
