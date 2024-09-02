@@ -36,7 +36,7 @@ export function TestimonialCard() {
               <StarIcon />
             </div>
           </div>
-          <Typography color="blue-gray" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Frontend Lead @ Google</Typography>
+          <Typography color="blue-gray" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Murid Prisma</Typography>
         </div>
       </CardHeader>
       <CardBody className="mb-6 p-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
