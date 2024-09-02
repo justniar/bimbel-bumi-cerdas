@@ -1,54 +1,71 @@
 import React from "react";
+import { 
+  Card, 
+  CardBody, 
+  CardFooter, 
+  CardHeader, 
+  Tooltip, 
+  Typography 
+} from "@material-tailwind/react";
 
 interface PengajarCardProps {
-  bg: string;        // Background color class, e.g., 'blue-500'
-  text: string;      // Text color class, e.g., 'white'
   img: string;       // Image URL
-  price: string;     // Price value
-  button: string;    // Button class, e.g., 'bg-blue-500'
-  title: string;     // Title text
+  nama: string;     // nama pengajar
+  spesialisasi: string;    // spesialisasi
+  bergabungSejak: string;     // tanggal bergabung
 }
 
-const PengajarCard: React.FC<PengajarCardProps> = ({ bg, text, img, price, button, title }) => {
+const PengajarCard: React.FC<PengajarCardProps> = ({ img, nama, spesialisasi, bergabungSejak}) => {
   return (
-    <div
-      className={`p-10 space-y-5 rounded-md bg-${bg} shadow-2xl text-${text}`}
-    >
-      <h1 className="text-xl font-semibold">{title}</h1>
-      <h1 className="text-4xl font-bold">
-        {price}$ <span className="font-thin">/month</span>
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
-        architecto? Perferendis tenetur ut temporibus laborum nemo consequatur
-        hic sint esse.
-      </p>
-      <ul className="space-y-5">
-        <li className="flex space-x-2">
-          <img src={img} alt="" className="w-8 h-8" />
-          <span>Lorem ipsum dolor sit amet consectetur.</span>
-        </li>
-        <li className="flex space-x-2">
-          <img src={img} alt="" className="w-8 h-8" />
-          <span>Lorem ipsum dolor sit amet consectetur.</span>
-        </li>
-        <li className="flex space-x-2">
-          <img src={img} alt="" className="w-8 h-8" />
-          <span>Lorem ipsum dolor sit amet consectetur.</span>
-        </li>
-        <li className="flex space-x-2">
-          <img src={img} alt="" className="w-8 h-8" />
-          <span>Lorem ipsum dolor sit amet consectetur.</span>
-        </li>
-        <li className="flex space-x-2">
-          <img src={img} alt="" className="w-8 h-8" />
-          <span>Lorem ipsum dolor sit amet consectetur.</span>
-        </li>
-      </ul>
-      <button className={`px-5 py-2 ${button} font-semibold rounded-full`}>
-        Choose plan
-      </button>
-    </div>
+    <Card placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <CardHeader floated={false} className="h-80" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <img src={img} alt="profile-picture" className="w-full h-full object-cover"/>
+      </CardHeader>
+      <CardBody className="text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          {nama}
+        </Typography>
+        <Typography color="blue-gray" className="font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          {spesialisasi}
+        </Typography>
+        <Typography color="blue-gray" className="font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          {bergabungSejak}
+        </Typography>
+      </CardBody>
+      <CardFooter className="flex justify-center gap-7 pt-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Tooltip content="Like">
+          <Typography
+            as="a"
+            href="#facebook"
+            variant="lead"
+            color="blue"
+            textGradient 
+            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            <i className="fab fa-facebook" />
+          </Typography>
+        </Tooltip>
+        <Tooltip content="Follow">
+          <Typography
+            as="a"
+            href="#twitter"
+            variant="lead"
+            color="light-blue"
+            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            <i className="fab fa-twitter" />
+          </Typography>
+        </Tooltip>
+        <Tooltip content="Follow">
+          <Typography
+            as="a"
+            href="#instagram"
+            variant="lead"
+            color="purple" 
+            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            <i className="fab fa-instagram" />
+          </Typography>
+        </Tooltip>
+      </CardFooter>
+    </Card>
   );
 };
 

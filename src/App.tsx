@@ -6,6 +6,7 @@ import Program from "./components/Program";
 import Prestasi from "./components/Prestasi";
 import Pengajar from "./components/Pengajar";
 import Profil from "./components/Profil";
+import { TestimonialCard } from "./components/Testimoni";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Prestasi />
         <Pengajar />
         <Watch />
+        <TestimonialCard/>
         <Footer />
       </div>
     </div>
