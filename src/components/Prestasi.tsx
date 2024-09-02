@@ -18,9 +18,9 @@ const galleryData = [
   { url: tiga, caption: "Level 5 ABAMA" },
 ];
 
-const Prestasi = () => {
+const Prestasi = (id:any) => {
   return (
-    <div className="py-20 px-5 flex flex-col justify-center items-center space-y-10">
+    <div id="prestasi" className="py-20 px-5 flex flex-col justify-center items-center space-y-10">
       <div className="text-center md:w-1/2 space-y-5">
         <p className="text-orange-400">Prestasi Terbaru Bimbel Bumi Cerdas</p>
         <h1 className="text-4xl font-semibold">

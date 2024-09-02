@@ -1,10 +1,9 @@
 import React from "react";
 import hero from "../assets/hero.png";
 
-const Hero = () => {
+const Hero = (id:any) => {
   return (
-    <div className="w-full bg-white">
-      {/* Wave Background */}
+    <div id="beranda" className="w-full bg-white">
       <div className="absolute inset-0 bg-gradient-to-b from-orange-100 to-white pointer-events-none">
         <svg className="absolute bottom-0 w-full h-20" viewBox="0 0 1440 320">
           <path

@@ -1,6 +1,5 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-// import Watch from "./components/Watch";
 import Footer from "./components/Footer";
 import Program from "./components/Program";
 import Prestasi from "./components/Prestasi";
@@ -11,17 +10,16 @@ import Testimoni from "./components/Testimoni";
 function App() {
   return (
     <div className="bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
-      <div className="container m-auto">
-        <Navbar />
-        <Hero />
-        <Program />
-        <Profil/>
-        <Prestasi />
-        <Pengajar />
-        {/* <Watch /> */}
-        <Testimoni/>
-        <Footer />
-      </div>
+      <Navbar />
+      <main className="pt-20"> {/* Add padding-top to avoid overlap with fixed navbar */}
+        <Hero id="home" />
+        <Program id="program" />
+        <Profil id="profil" />
+        <Prestasi id="prestasi" />
+        <Pengajar id="pengajar" />
+        <Testimoni id="testimoni" />
+        <Footer id="tentang" />
+      </main>
     </div>
   );
 }

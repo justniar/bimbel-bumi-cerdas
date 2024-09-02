@@ -8,7 +8,7 @@ import english from "../assets/english.png"
 
 import ProgramCard from "./ProgramCard";
 
-const Program = () => {
+const Program = (id:any) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -24,7 +24,7 @@ const Program = () => {
   };
 
   return (
-    <div className="py-20 px-10 relative">
+    <div id="program" className="py-20 px-10 relative">
       <div className="max-w-7xl mx-auto overflow-x-hidden" ref={scrollContainerRef}>
         <div className="inline-flex p-10 space-x-5">
           <ProgramCard src={math} judul="Prisma" deskripsi="Deskripsi singkat tentang program Prisma." />

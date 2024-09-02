@@ -1,8 +1,8 @@
 import PengajarCard from "./PengajarCard";
 
-const Pengajar = () => {
+const Pengajar = (id:any) => {
   return (
-    <div className="py-20">
+    <div id="pengajar" className="py-20">
       <div className="md:w-1/3 m-auto text-center space-y-2">
         <h1 className="text-5xl font-semibold">
           Pengajar di BBC

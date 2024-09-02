@@ -1,9 +1,9 @@
 import React from 'react';
 import { TestimonialCard } from './TestimoniCard';
 
-const Testimoni = () => {
+const Testimoni = (id:any) => {
   return (
-    <section className="py-12 bg-gray-50">
+    <section id="testimoni" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-semibold text-blue-gray-800">
