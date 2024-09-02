@@ -1,12 +1,12 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Watch from "./components/Watch";
+// import Watch from "./components/Watch";
 import Footer from "./components/Footer";
 import Program from "./components/Program";
 import Prestasi from "./components/Prestasi";
 import Pengajar from "./components/Pengajar";
 import Profil from "./components/Profil";
-import { TestimonialCard } from "./components/Testimoni";
+import Testimoni from "./components/Testimoni";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
         <Profil/>
         <Prestasi />
         <Pengajar />
-        <Watch />
-        <TestimonialCard/>
+        {/* <Watch /> */}
+        <Testimoni/>
         <Footer />
       </div>
     </div>
