@@ -13,8 +13,8 @@ const Profil = () => {
       }}
     >
       <div className="rounded-md w-full md:w-1/2 space-y-5 text-center">
-        <p className="text-green-400">Profil Terbaru Bimble Bumi Cerdas</p>
-        <h1 className="text-6xl font-semibold text-green-400">
+        <p className="text-orange-400">Profil Terbaru Bimble Bumi Cerdas</p>
+        <h1 className="text-6xl font-semibold text-orange-400">
           Tentang Bimble Bumi Cerdas
         </h1>
         <p className="text-gray-500">
@@ -24,7 +24,7 @@ const Profil = () => {
           metode pembelajaran yang efektif. Dengan memanfaatkan teknologi terkini, Bimble Bumi Cerdas menyediakan
           berbagai materi pelajaran, latihan soal, dan simulasi ujian yang disesuaikan dengan kurikulum terbaru. 
         </p>
-        <button className="px-5 py-2 rounded-full bg-green-500 text-white font-semibold">
+        <button className="px-5 py-2 rounded-full bg-orange-500 text-white font-semibold">
           Pelajari
         </button>
       </div>

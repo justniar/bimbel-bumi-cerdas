@@ -22,7 +22,7 @@ const Prestasi = () => {
   return (
     <div className="py-20 px-5 flex flex-col justify-center items-center space-y-10">
       <div className="text-center md:w-1/2 space-y-5">
-        <p className="text-green-400">Prestasi Terbaru Bimbel Bumi Cerdas</p>
+        <p className="text-orange-400">Prestasi Terbaru Bimbel Bumi Cerdas</p>
         <h1 className="text-4xl font-semibold">
           Prestasi Terbaru Bimbel Bumi Cerdas
         </h1>
@@ -47,7 +47,7 @@ const Prestasi = () => {
         ))}
       </div>
       
-      <button className="mt-10 px-5 py-2 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition-colors duration-300">
+      <button className="mt-10 px-5 py-2 rounded-full bg-orange-500 text-white font-semibold hover:bg-orange-600 transition-colors duration-300">
         Lihat Lebih Banyak
       </button>
     </div>

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="w-full bg-white">
       {/* Wave Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-green-100 to-white pointer-events-none">
+      <div className="absolute inset-0 bg-gradient-to-b from-orange-100 to-white pointer-events-none">
         <svg className="absolute bottom-0 w-full h-20" viewBox="0 0 1440 320">
           <path
             fill="#ffffff"
@@ -18,14 +18,14 @@ const Hero = () => {
       <div className="relative py-20 flex flex-col md:flex-row justify-between items-center px-5 max-w-7xl mx-auto">
         <div className="md:w-1/2 space-y-5 py-20">
           <h1 className="text-5xl md:text-7xl font-semibold leading-tight">
-            Sebuah <span className="text-green-500 font-bold">Tempat</span> Belajar
-            yang <span className="text-green-500 font-bold">menyenangkan</span>
+            Sebuah <span className="text-orange-500 font-bold">Tempat</span> Belajar
+            yang <span className="text-orange-500 font-bold">menyenangkan</span>
           </h1>
           <p className="text-gray-600 text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ullam
             iste praesentium dolorum laudantium corrupti?
           </p>
-          <button className="px-6 py-3 rounded-full bg-green-500 hover:bg-green-600 transition-colors duration-200 text-white font-semibold">
+          <button className="px-6 py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors duration-200 text-white font-semibold">
             Ayo Cari tau
           </button>
         </div>

@@ -10,14 +10,14 @@ const Navbar = () => {
       </div>
       <div className="flex items-center space-x-8">
         <ul className="hidden md:flex items-center space-x-6 text-gray-700">
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Beranda</li>
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Program</li>
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Prestasi</li>
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Pengajar</li>
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Testimoni</li>
-          <li className="hover:text-green-500 transition-colors duration-200 cursor-pointer">Tentang</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Beranda</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Program</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Prestasi</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Pengajar</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Testimoni</li>
+          <li className="hover:text-orange-500 transition-colors duration-200 cursor-pointer">Tentang</li>
         </ul>
-        <button className="text-gray-700 hover:text-blue-500 transition-colors duration-200">
+        <button className="text-gray-700 hover:text-white-500 transition-colors duration-200">
           <IoSearch size={20} />
         </button>
       </div>
