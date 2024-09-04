@@ -1,7 +1,7 @@
 import React from "react";
 import hero from "../assets/hero.png";
 
-const Hero = () => {
+const Hero = (id:any) => {
   return (
     <section id="home" className="relative w-full bg-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-orange-100 to-white pointer-events-none">
@@ -14,9 +14,9 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="relative py-12 md:py-20 flex flex-col md:flex-row justify-between items-center px-4 md:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="relative py-12 md:py-20 sm:py-0 flex flex-col sm:flex-col md:flex-row justify-between md:items-center sm:items-start px-4 sm:px-0 md:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="md:w-1/2 space-y-4 md:space-y-6 lg:space-y-8 py-8 md:py-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight">
+          <h1 className="text-4xl sm:text-2xl md:text-5xl lg:text-6xl font-semibold leading-tight">
             Sebuah <span className="text-orange-500 font-bold">Tempat</span> Belajar
             yang <span className="text-orange-500 font-bold">menyenangkan</span>
           </h1>

@@ -42,14 +42,14 @@ const Program = (id: any) => {
       {/* Scroll buttons */}
       <button
         onClick={scrollLeft}
-        className="hidden sm:block absolute top-1/2 left-0 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none"
+        className="hidden sm:block absolute top-1/2 left-0 transform -translate-y-1/2 p-3 m-10 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none"
       >
         <IoIosArrowBack size={24} />
       </button>
 
       <button
         onClick={scrollRight}
-        className="hidden sm:block absolute top-1/2 right-0 transform -translate-y-1/2 p-3 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none"
+        className="hidden sm:block absolute top-1/2 right-0 transform -translate-y-1/2 p-3 m-10 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none"
       >
         <IoIosArrowForward size={24} />
       </button>
