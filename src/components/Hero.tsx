@@ -14,7 +14,7 @@ const Hero = (id:any) => {
         </svg>
       </div>
 
-      <div className="relative py-12 md:py-20 sm:py-0 flex flex-col sm:flex-col md:flex-row justify-between md:items-center sm:items-start px-4 sm:px-0 md:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="relative py-12 sm:w-10rem md:py-20 sm:py-0 flex flex-col sm:flex-col md:flex-row justify-between md:items-center sm:items-start px-4 sm:px-0 md:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="md:w-1/2 space-y-4 md:space-y-6 lg:space-y-8 py-8 md:py-12">
           <h1 className="text-4xl sm:text-2xl md:text-5xl lg:text-6xl font-semibold leading-tight">
             Sebuah <span className="text-orange-500 font-bold">Tempat</span> Belajar
@@ -28,7 +28,7 @@ const Hero = (id:any) => {
             Ayo Cari tau
           </button>
         </div>
-        <div className="md:w-1/2">
+        <div className="sm:w-1/5 md:w-1/2">
           <img src={hero} alt="Learning" className="w-full h-auto object-cover" />
         </div>
       </div>

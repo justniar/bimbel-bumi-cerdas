@@ -1,71 +1,34 @@
-import React from "react";
-import { 
-  Card, 
-  CardBody, 
-  CardFooter, 
-  CardHeader, 
-  Tooltip, 
-  Typography 
-} from "@material-tailwind/react";
-
 interface PengajarCardProps {
-  img: string;       // Image URL
-  nama: string;     // nama pengajar
-  spesialisasi: string;    // spesialisasi
-  bergabungSejak: string;     // tanggal bergabung
+  name: string;
+  role: string;
+  description: string;
+  imgSrc: string;
+  socialLinks: { platform: string; url: string; icon: JSX.Element }[];
 }
 
-const PengajarCard: React.FC<PengajarCardProps> = ({ img, nama, spesialisasi, bergabungSejak}) => {
+const PengajarCard = ({ name, role, description, imgSrc, socialLinks }: PengajarCardProps) => {
   return (
-    <Card placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-      <CardHeader floated={false} className="h-80" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <img src={img} alt="profile-picture" className="w-full h-full object-cover"/>
-      </CardHeader>
-      <CardBody className="text-center" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <Typography variant="h4" color="blue-gray" className="mb-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          {nama}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          {spesialisasi}
-        </Typography>
-        <Typography color="blue-gray" className="font-medium" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          {bergabungSejak}
-        </Typography>
-      </CardBody>
-      <CardFooter className="flex justify-center gap-7 pt-2" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <Tooltip content="Like">
-          <Typography
-            as="a"
-            href="#facebook"
-            variant="lead"
-            color="blue"
-            textGradient 
-            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            <i className="fab fa-facebook" />
-          </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <Typography
-            as="a"
-            href="#twitter"
-            variant="lead"
-            color="light-blue"
-            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            <i className="fab fa-twitter" />
-          </Typography>
-        </Tooltip>
-        <Tooltip content="Follow">
-          <Typography
-            as="a"
-            href="#instagram"
-            variant="lead"
-            color="purple" 
-            placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
-            <i className="fab fa-instagram" />
-          </Typography>
-        </Tooltip>
-      </CardFooter>
-    </Card>
+    <div className="flex flex-col items-center p-3 max-w-[250px] md:max-w-[500px] bg-orange-50 rounded-lg shadow sm:flex-row dark:bg-gray-800 dark:border-gray-700">
+      <a href="#" className="w-full max-w-[120px] sm:max-w-[150px]">
+        <img className="w-full rounded-t-lg sm:rounded-none sm:rounded-l-lg" src={imgSrc} alt={`${name} Avatar`} />
+      </a>
+      <div className="p-5 flex-1 text-center sm:text-left">
+        <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <a href="#">{name}</a>
+        </h3>
+        <span className="text-gray-500 dark:text-gray-400">{role}</span>
+        <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">{description}</p>
+        <ul className="flex justify-center sm:justify-start space-x-4 sm:mt-0">
+          {socialLinks.map(({ platform, url, icon }) => (
+            <li key={platform}>
+              <a href={url} className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                {icon}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 };
 

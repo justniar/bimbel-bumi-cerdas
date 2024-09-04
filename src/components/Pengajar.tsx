@@ -1,38 +1,60 @@
 import PengajarCard from "./PengajarCard";
 
 const Pengajar = (id:any) => {
+  const teamMembers = [
+    {
+      name: "Miss Silvy",
+      role: "Baca, Prisma, Bahasa Inggris",
+      description: "Mengajar merupakan skill dan passion saya",
+      imgSrc: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
+      socialLinks: [
+        {
+          platform: "Facebook",
+          url: "#",
+          icon: (
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              {/* SVG content */}
+            </svg>
+          ),
+        },
+      ],
+    },
+    {
+      name: "Miss Alma",
+      role: "Baca, Prisma",
+      description: "Mengajar merupakan skill dan passion saya.",
+      imgSrc: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png",
+      socialLinks: [
+        {
+          platform: "Twitter",
+          url: "#",
+          icon: (
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              {/* SVG content */}
+            </svg>
+          ),
+        },
+      ],
+    },
+    // Add more team members as needed
+  ];
+
   return (
-    <div id="pengajar" className="py-20">
-      <div className="md:w-1/3 m-auto text-center space-y-2">
-        <h1 className="text-5xl font-semibold">
-          Pengajar di BBC
-        </h1>
-        <p className="text-sm text-gray-400">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero odio
-          fuga architecto aliquam hic illum dolor, deleniti veniam.
-        </p>
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tim Pengajar BBC</h2>
+          <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+            {/* Add a description here if needed */}
+          </p>
+        </div>
+        <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2 sm:grid-cols-1">
+          {teamMembers.map((member, index) => (
+            <PengajarCard key={index} {...member} />
+          ))}
+        </div>
       </div>
-      <div className="grid md:grid-cols-3 gap-32 justify-items-center p-10">
-        <PengajarCard
-          bergabungSejak="white dark:bg-green-900 "
-          nama="Basic"
-          spesialisasi="black"
-          img="/check_green.svg"
-        />
-        <PengajarCard
-          bergabungSejak="white dark:bg-green-900 "
-          nama="Basic"
-          spesialisasi="black"
-          img="/check_green.svg"
-        />
-        <PengajarCard
-          bergabungSejak="white dark:bg-green-900 "
-          nama="Basic"
-          spesialisasi="black"
-          img="/check_green.svg"
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 
