@@ -1,11 +1,10 @@
-import React from "react";
 import aboutSvg from "../assets/bg2.jpg"; // Update this path to the SVG file
 
-const Profil = (id:any) => {
+const Profil = () => {
   return (
     <div 
       id="profil"
-      className="flex flex-col md:justify-center md:items-center bg-white relative min-h-screen"
+      className="flex flex-col p-10 md:justify-center md:items-center bg-white relative min-h-screen"
       style={{
         backgroundImage: `url(${aboutSvg})`,
         backgroundSize: 'cover',
