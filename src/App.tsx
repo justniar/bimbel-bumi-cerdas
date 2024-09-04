@@ -9,7 +9,7 @@ import Testimoni from "./components/Testimoni";
 
 function App() {
   return (
-    <div className="bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
+    <div className="w-[380px] md:w-full bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
       <Navbar />
       <main className="pt-20"> {/* Add padding-top to avoid overlap with fixed navbar */}
         <Hero id="home" />

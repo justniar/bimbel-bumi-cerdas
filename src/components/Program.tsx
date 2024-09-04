@@ -24,7 +24,7 @@ const Program = (id: any) => {
   };
 
   return (
-    <div id="program" className="py-10 px-4 sm:px-10 relative">
+    <div id="program" className="w-[330px] md:w-full py-10 px-4 sm:px-10 relative">
       <div className="max-w-7xl mx-auto overflow-hidden" ref={scrollContainerRef}>
         <div className="inline-flex p-5 space-x-4 sm:space-x-5">
           <ProgramCard src={math} judul="Prisma" deskripsi="Deskripsi singkat tentang program Prisma." />

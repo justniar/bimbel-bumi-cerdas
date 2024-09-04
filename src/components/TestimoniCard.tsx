@@ -9,7 +9,7 @@ import StarIcon from "./StarIcon";
 
 export function TestimonialCard() {
   return (
-    <Card shadow={false} className="w-full max-w-sm p-5" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+    <Card shadow={false} className="max-w-[250px] md:max-w-full p-5" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
       <CardHeader
         floated={false}
         shadow={false}
