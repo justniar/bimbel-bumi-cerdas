@@ -9,16 +9,16 @@ import Testimoni from "./components/Testimoni";
 
 function App() {
   return (
-    <div className="w-[380px] md:w-full bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
+    <div className="w-[420px] md:w-full bg-[url('/bg.svg')] dark:bg-[url('/bg_dark.svg')] bg-cover">
       <Navbar />
-      <main className="pt-20"> {/* Add padding-top to avoid overlap with fixed navbar */}
-        <Hero id="home" />
-        <Program id="program" />
-        <Profil id="profil" />
-        <Prestasi id="prestasi" />
-        <Pengajar id="pengajar" />
-        <Testimoni id="testimoni" />
-        <Footer id="tentang" />
+      <main className="pt-20">
+        <Hero/>
+        <Program/>
+        <Profil/>
+        <Prestasi/>
+        <Pengajar/>
+        <Testimoni/>
+        <Footer/>
       </main>
     </div>
   );
