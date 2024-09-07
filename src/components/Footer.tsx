@@ -1,6 +1,4 @@
-import React from "react";
-
-const Footer = (id:any) => {
+const Footer = () => {
   const whatsappNumber = "+6281212565078";
   const message = "Halo, saya tertarik untuk mengetahui lebih lanjut tentang Bimbel Bumi Cerdas.";
 

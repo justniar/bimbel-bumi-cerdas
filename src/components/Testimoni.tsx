@@ -1,7 +1,6 @@
-import React from 'react';
 import { TestimonialCard } from './TestimoniCard';
 
-const Testimoni = (id:any) => {
+const Testimoni = () => {
   return (
     <section id="testimoni" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">

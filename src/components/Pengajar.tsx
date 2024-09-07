@@ -1,6 +1,6 @@
 import PengajarCard from "./PengajarCard";
 
-const Pengajar = (id:any) => {
+const Pengajar = () => {
   const teamMembers = [
     {
       name: "Miss Silvy",
@@ -36,7 +36,6 @@ const Pengajar = (id:any) => {
         },
       ],
     },
-    // Add more team members as needed
   ];
 
   return (

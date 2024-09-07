@@ -1,4 +1,3 @@
-import React from "react";
 import satu from "../assets/prestasi/1.jpeg";
 import dua from "../assets/prestasi/2.jpeg";
 import tiga from "../assets/prestasi/3.jpeg";
@@ -18,7 +17,7 @@ const galleryData = [
   { url: tiga, caption: "Level 5 ABAMA" },
 ];
 
-const Prestasi = (id:any) => {
+const Prestasi = () => {
   return (
     <div id="prestasi" className="py-20 px-5 flex flex-col justify-center items-center space-y-10">
       <div className="text-center md:w-1/2 space-y-5">
