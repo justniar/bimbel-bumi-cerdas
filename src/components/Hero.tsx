@@ -24,7 +24,7 @@ const Hero = () => {
             iste praesentium dolorum laudantium corrupti?
           </p>
           <button className="px-4 py-2 md:px-6 md:py-3 rounded-full bg-orange-500 hover:bg-orange-600 transition-colors duration-200 text-white font-semibold text-sm md:text-base">
-            Ayo Cari tau
+            Daftar Sekarang
           </button>
         </div>
         <div className="sm:w-1/5 md:w-1/2">
